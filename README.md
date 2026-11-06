@@ -83,4 +83,4 @@ Use os menus no terminal para gerenciar usuários, trilhas e progresso. Os arqui
 
 ## Integrantes do Squad 02
 
-Aline David, Ana Clara, Geraldo, Gustavo Tavares, Hanna Chateaubriand, Marcos Gabriel, Matheus Alexandre, Nayara e Thyago.
+Aline, Gustavo Tavares, Matheus Alexandre, Nayara Costa e Thyago.
