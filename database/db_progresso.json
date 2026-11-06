@@ -1,0 +1,14 @@
+{
+    "progresso": [
+        {
+            "id": 1,
+            "usuario_id": 1,
+            "trilha_id": 4,
+            "setor": "Operacional",
+            "pontuacao_quiz": 120,
+            "streak_dias": 5,
+            "percentual_concluido": 68,
+            "certificado_emitido": false
+        }
+    ]
+}

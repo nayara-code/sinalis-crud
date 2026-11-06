@@ -1,0 +1,28 @@
+{
+    "user": [
+        {
+            "id": 1,
+            "nome": "Julia Ferreira",
+            "email": "julia@email.com",
+            "perfil": "Pessoa Surda",
+            "empresa_escola": "Independente",
+            "nivel": "Iniciante"
+        },
+        {
+            "id": 2,
+            "nome": "Saulo Pereira",
+            "email": "saulo@escolabilingue.com",
+            "perfil": "Professor",
+            "empresa_escola": "Escola Bilingue Recife",
+            "nivel": "Intermediário"
+        },
+        {
+            "id": 3,
+            "nome": "Juliana Albuquerque",
+            "email": "juliana@nexora.com",
+            "perfil": "Gestor Corporativo",
+            "empresa_escola": "Nexora",
+            "nivel": "Iniciante"
+        }
+    ]
+}

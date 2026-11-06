@@ -1,0 +1,32 @@
+{
+    "trilha": [
+        {
+            "id": 1,
+            "titulo": "Libras no Atendimento",
+            "categoria": "Corporativo / Ouvintes",
+            "idiomas": "Libras + Português",
+            "total_aulas": 5
+        },
+        {
+            "id": 2,
+            "titulo": "Informática Básica",
+            "categoria": "Qualificação Profissional",
+            "idiomas": "Libras",
+            "total_aulas": 3
+        },
+        {
+            "id": 3,
+            "titulo": "Cozinha e Padaria",
+            "categoria": "Qualificação Profissional",
+            "idiomas": "Libras",
+            "total_aulas": 3
+        },
+        {
+            "id": 4,
+            "titulo": "Vocabulário Visual: Libras + Inglês + Espanhol",
+            "categoria": "Apoio Bilingue",
+            "idiomas": "Libras + EN + ES",
+            "total_aulas": 10
+        }
+    ]
+}

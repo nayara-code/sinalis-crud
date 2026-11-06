@@ -1,96 +1,86 @@
-# Sinalis — Mãos que conectam mundos 🤟
+# Sinalis — Mãos que conectam mundos
 
-O **Sinalis** é uma plataforma educacional e corporativa voltada para a inclusão, qualificação profissional e ensino bilíngue (Libras, Português e línguas estrangeiras) para pessoas surdas e ouvintes. Este repositório contém o sistema CRUD em Python que gerencia os usuários, trilhas de aprendizagem e métricas de inclusão corporativa do projeto.
+O **Sinalis** é uma plataforma educacional e corporativa bilíngue que aproxima pessoas surdas e ouvintes por meio de aprendizagem visual e acessível. A proposta conecta Libras, Português escrito e línguas estrangeiras, oferecendo qualificação profissional, recursos de aprendizagem e acompanhamento de inclusão.
 
-## Cenário e Problema
+Este repositório contém um sistema CRUD em Python executado pelo terminal. Usuários, trilhas e registros de progresso são persistidos localmente em arquivos JSON, sem dependências externas.
 
-No Brasil, a exclusão comunicacional e educacional gera barreiras severas para a comunidade surda no mercado de trabalho e na sociedade:
+## Cenário e Problema no Brasil
 
-* **População impactada:** 10,7 milhões de pessoas possuem algum grau de deficiência auditiva no país (IBGE).
-* **Barreira corporativa:** 85% das empresas não possuem intérpretes de Libras (FENEIS).
-* **Escolaridade:** Apenas 7,4% das pessoas com deficiência concluíram o Ensino Superior (IBGE).
-* **Estagnação profissional:** 89,1% das vagas para PcD concentram-se em funções operacionais e auxiliares (MTE).
+A exclusão comunicacional e educacional cria barreiras para a comunidade surda no acesso à educação e ao mercado de trabalho. Os dados de contexto adotados pelo projeto são:
 
-Esses fatores resultam diretamente em isolamento social, estagnação de carreira e vulnerabilidade socioeconômica.
+* **10,7 milhões** de pessoas com deficiência auditiva no Brasil (IBGE).
+* **85%** das empresas sem intérpretes de Libras (FENEIS).
+* **7,4%** das pessoas com deficiência com Ensino Superior (IBGE).
+* **89,1%** das vagas PcD concentradas em funções operacionais ou auxiliares (MTE).
 
-## Nossa Solução
+Esses indicadores ajudam a contextualizar a necessidade de ampliar o acesso à comunicação, à formação e a oportunidades de desenvolvimento profissional.
 
-O Sinalis atua na ponta educacional e corporativa por meio de cinco pilares principais:
+## Os Cinco Pilares
 
-* **Gamificação adaptativa:** Módulos interativos, desafios diários, *quizzes* e controle de ofensiva (*streak* de acertos) para manter o engajamento no letramento corporativo e no aprendizado de sinais.
-* **Painel corporativo de progresso e inclusão:** Acompanhamento de metas trimestrais de inclusão, emissão de certificados e progresso segmentado por equipes (como Atendimento, Financeiro e Tecnologia).
-* **Trilhas de qualificação profissional:** Cursos práticos e acessíveis em Libras (ex.: Informática Básica, Cozinha e Padaria) voltados para a empregabilidade e ascensão de carreira.
-* **Apoio bilíngue e línguas estrangeiras:** Ensino visual que conecta Libras (L1), Português escrito (L2) e idiomas estrangeiros como Inglês e Espanhol (L3) com vídeos de sinais validados.
-* **Ensino de Libras para ouvintes:** Capacitação de colaboradores ouvintes com foco em atendimento, cultura inclusiva e boas práticas de comunicação no dia a dia.
+1. **Gamificação adaptativa:** atividades, quizzes e streaks para incentivar a aprendizagem contínua e acompanhar resultados.
+2. **Painel corporativo de progresso e inclusão:** visão de conclusão por atividade e setor, com acompanhamento de certificados.
+3. **Trilhas de qualificação profissional:** percursos práticos, como Informática Básica e Cozinha e Padaria, com conteúdo acessível em Libras.
+4. **Apoio bilíngue e línguas estrangeiras:** conexão entre Libras, Português e idiomas como Inglês e Espanhol em uma experiência visual.
+5. **Ensino de Libras para ouvintes:** formação de colaboradores para comunicação e atendimento mais inclusivos.
 
 ## Diferenciais Competitivos
 
-Comparativo de funcionalidades entre o Sinalis e outras soluções do mercado:
+Comparativo de posicionamento do projeto frente às soluções consideradas na pesquisa:
 
 | Funcionalidade | Sinalis | Hands Talk | LibrasLab | Lingvano |
 | :--- | :---: | :---: | :---: | :---: |
-| Gamificação adaptativa do letramento corporativo para surdos | ✅ | ❌ | ❌ | ❌ |
-| Painel corporativo de progresso e inclusão | ✅ | ❌ | ❌ | ❌ |
-| Trilhas de qualificação profissional | ✅ | ❌ | ✅ | ❌ |
-| Apoio bilíngue em Libras e línguas estrangeiras | ✅ | ✅ | ❌ | ✅ |
-| Ensino de Libras para funcionários ouvintes | ✅ | ❌ | ✅ | ✅ |
+| Gamificação adaptativa do letramento corporativo para surdos | Sim | Não | Não | Não |
+| Painel corporativo de progresso e inclusão | Sim | Não | Não | Não |
+| Trilhas de qualificação profissional | Sim | Não | Sim | Não |
+| Apoio bilíngue em Libras e línguas estrangeiras | Sim | Sim | Não | Sim |
+| Ensino de Libras para funcionários ouvintes | Sim | Não | Sim | Sim |
 
-## UX Research e Descoberta
+## UX Research e Descoberta (Squad 02)
 
-O desenvolvimento do Sinalis foi fundamentado em pesquisas de experiência do usuário e mapeamento de dores reais documentadas pelo Squad 02:
+A descoberta do produto considera necessidades de pessoas aprendizes, educadores e organizações:
 
-* **Personas mapeadas:**
-  * **Julia Ferreira (21 anos, Pessoa Surda):** Auxiliar de estoque que busca qualificação acessível em Libras, aprendizado de novos idiomas e crescimento profissional para alcançar independência financeira.
-  * **Saulo Pereira (34 anos, Professor de Inglês):** Atua em escola bilíngue e necessita de materiais visuais que conectem Libras, Português e Inglês sem dependência de áudio, além de relatórios pedagógicos para acompanhar suas turmas.
-  * **Juliana / Eduarda Albuquerque (34 anos, CEO):** Lidera uma empresa com mais de 100 funcionários e busca cumprir a Lei de Cotas (Lei 8.213/91) de maneira genuína, capacitando gestores e integrando profissionais surdos sem depender de processos improvisados.
-* **Artefatos de Design:** O projeto conta com **Matriz CSD** (Certezas, Suposições e Dúvidas), **Mapas de Empatia** e **Jornadas do Usuário** detalhadas (desde o cadastro e teste de nivelamento até a realização de atividades e acompanhamento de progresso).
+* **Julia Ferreira (21 anos, Pessoa Surda):** auxiliar de estoque que busca qualificação acessível em Libras, aprendizado de novos idiomas e crescimento profissional para alcançar independência financeira.
+* **Saulo Pereira (34 anos, Professor de Inglês):** atua em escola bilíngue e precisa de materiais visuais que conectem Libras, Português e Inglês sem dependência de áudio, além de acompanhamento pedagógico das turmas.
+* **Juliana / Eduarda Albuquerque (34 anos, Gestora Corporativa):** lidera uma empresa com mais de 100 funcionários e busca capacitar gestores e integrar profissionais surdos de maneira consistente, para além do cumprimento formal da Lei de Cotas (Lei 8.213/91).
 
-## Modelo de Negócios (B2B2C / B2G)
+Os artefatos de descoberta incluem **Matriz CSD** (Certezas, Suposições e Dúvidas), **Mapas de Empatia** e **Jornadas do Usuário**. As jornadas cobrem desde o cadastro e nivelamento até a realização de atividades e o acompanhamento do progresso.
 
-* **B2B (Empresas):** Assinatura corporativa para capacitação de equipes, painel de métricas de inclusão e adequação à legislação.
-* **B2G (Governo e Instituições):** Licenças institucionais para apoiar a aprendizagem de alunos surdos na rede de ensino e a formação continuada de professores.
-* **B2C (Individual):** Planos e recursos adicionais para usuários que desejam desenvolver leitura, escrita, Libras e outros idiomas no próprio ritmo.
+## Modelo de Negócios
 
-## Estrutura do Repositório (Arquitetura CRUD)
+* **B2B (empresas):** assinatura para capacitação de equipes, métricas de inclusão e formação de gestores e colaboradores.
+* **B2G (governo e instituições):** licenças para apoiar a aprendizagem de estudantes surdos e a formação continuada de educadores.
+* **B2C (pessoas):** acesso individual a recursos de leitura, escrita, Libras e outros idiomas no próprio ritmo.
 
-Seguindo o padrão modular em Python com persistência em arquivos JSON, o repositório está organizado da seguinte forma:
+## Estrutura do Repositório
 
 ```text
 sinalis-crud/
 ├── database/
-│   ├── db_usuario.json      # Dados de usuários (surdos, ouvintes, professores e gestores)
-│   ├── db_trilha.json       # Cursos, módulos de idiomas, desafios e trilhas de qualificação
-│   └── db_progresso.json    # Diagnósticos de nivelamento, pontuações, certificados e métricas
+│   ├── db_usuario.json
+│   ├── db_trilha.json
+│   └── db_progresso.json
 ├── services/
-│   ├── usuario.py           # CRUD de usuários (cadastro, login, listagem, atualização e exclusão)
-│   ├── trilha.py            # CRUD de trilhas, aulas e módulos bilíngues
-│   └── progresso.py         # Registro de nivelamento, cálculo de progresso e feedbacks
-├── db.py                    # Funções de leitura e escrita nos arquivos JSON
-├── main.py                  # Ponto de entrada da aplicação (menu interativo via terminal)
-└── README.md                # Documentação do projeto
+│   ├── usuario.py
+│   ├── trilha.py
+│   └── progresso.py
+├── .gitignore
+├── db.py
+├── main.py
+└── README.md
 ```
 
-## Como Executar o Projeto
+`db.py` centraliza a leitura e a gravação JSON. Os módulos em `services/` implementam as operações de cadastro, listagem, atualização e remoção, além do painel de progresso. Os dados de exemplo ficam em `database/`.
 
-1. Clone este repositório no seu ambiente local:
-   ```bash
-   git clone [https://github.com/seu-usuario/sinalis-crud.git](https://github.com/seu-usuario/sinalis-crud.git)
-   ```
-2. Acesse a pasta raiz do projeto:
-   ```bash
-   cd sinalis-crud
-   ```
-3. Certifique-se de ter o **Python 3.10+** instalado e execute o arquivo principal:
-   ```bash
-   python main.py
-   ```
+## Execução
 
-## Nosso Squad (Squad 02)
+Requisito: Python 3 instalado. O projeto usa somente a biblioteca padrão.
 
-Projeto desenvolvido por:
+```bash
+python main.py
+```
 
-* Aline
-* Gustavo Tavares
-* Matheus Alexandre
-* Nayara
-* Thyago
+Use os menus no terminal para gerenciar usuários, trilhas e progresso. Os arquivos JSON são lidos e gravados em relação ao diretório de execução.
+
+## Integrantes do Squad 02
+
+Aline David, Ana Clara, Geraldo, Gustavo Tavares, Hanna Chateaubriand, Marcos Gabriel, Matheus Alexandre, Nayara e Thyago.
